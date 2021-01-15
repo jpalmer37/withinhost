@@ -1,2 +1,3 @@
 # withinhost
-Investigation of indel rates in the variable regions of HIV-1 gp120. Does not contain all scripts used in pipeline for security purposes. 
+This project provides an analysis of the five variable regions within the gp120 surface protein of HIV-1. The gp120 protein is responsible for attaching to our human immune cells so that HIV can enter and infect them. The five variable regions within gp120 rapidly change their sequence and by doing so, are believed to promote HIV infection. This project aims to take in roughly ~25,000 HIV sequences, process them, reconstruct the most likely set of ancestral relationships between them (in a phylogenetic tree) and analyze the insertion and deletion events that occur within the variable regions. 
+
