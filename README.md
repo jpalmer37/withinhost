@@ -1,3 +1,9 @@
-# Within-host analysis of sequence insertions and deletions in the HIV surface protein  
-This project provides an analysis of the five variable regions within the gp120 surface protein of HIV-1. The gp120 protein is responsible for attaching to our human immune cells so that HIV can enter and infect them. The five variable regions within gp120 rapidly change their sequence and by doing so, are believed to promote HIV infection. This project aims to take in roughly ~25,000 HIV sequences, process them, reconstruct the most likely set of ancestral relationships between them (in a phylogenetic tree) and analyze the insertion and deletion events that occur within the variable regions. 
+# Analysis of insertion/deletion (indel) mutation in the HIV surface protein within hosts
+
+This project contains partial (not all) scripts used to generate results presented in my masters thesis.
+For context, the gp120 protein is found on the surface of HIV and is responsible for letting HIV enter and infect our own bodily cells.
+This pipeline was used to take in roughly ~25,000 HIV genetic sequences, process them, use MCMC / Bayesian inference to reconstruct evolutionary history (a phylogenetic tree), and model the rates of indel mutations (Hamiltonian Monte Carlo; RStan; hierarchical modelling).
+
+
+
 
