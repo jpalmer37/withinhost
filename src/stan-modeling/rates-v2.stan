@@ -3,7 +3,7 @@ data {
   int<lower=0> ntree;                         // Number of columns    
   int <lower=0> sizes[npat];                            // Vector describing the number of rows belonging to each patient
   int<lower=0> counts[sum(sizes),ntree];         // Count data
-  matrix[sum(sizes),ntree] l_branches;     // Time data
+  matrix[sum(sizes),ntree] lengths;     // Time data
 }
 
 parameters {
@@ -25,8 +25,9 @@ model {
     lim = pos+sizes[i]-1;
     
     for (j in 1:ntree){      
-      counts[pos:lim, j] ~ poisson_log_lpmf(tre_rates[i,j] + l_branches[pos:lim,j]); 
+      counts[pos:lim, j] ~ poisson(exp(tre_rates[i,j] * log(lengths[pos:lim,j]))); 
     }
+    
     pos = pos + sizes[i];
   }
 
