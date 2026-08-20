@@ -5,7 +5,7 @@ from glob import *
 import re
 from seqUtils import *
 
-files = glob("/path/to/PycharmProjects/hiv-withinhost/8Historian/mcc/*a_recon.fasta")
+files = glob("/path/to/hiv-withinhost/8Historian/mcc/*a_recon.fasta")
 count = 0
 seqs = 0
 for f in files:

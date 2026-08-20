@@ -12,7 +12,7 @@ if not sys.argv[1].endswith('/'):
 
 tpath = sys.argv[1]+'trees/'
 opath = sys.argv[1]+'output/'
-mpath = '/path/to/work/4MSA/final/'
+mpath = '/path/to/hiv-withinhost/4MSA/final/'
 
 trees = glob(tpath+'*')
 
@@ -28,8 +28,7 @@ for i in range(len(trees)):
     #sys.stdout.write(out[i]+'\n')
 
     outfile = open(out[i],'w+') 
-    status = check_call(['/path/to/historian/bin/historian', '-guide', msa[i], '-tree', trees[i],'-ancseq','-mcmc','-output','fasta'], stdout=outfile) 
+    status = check_call(['/path/to/historian', '-guide', msa[i], '-tree', trees[i],'-ancseq','-mcmc','-output','fasta'], stdout=outfile)
     outfile.close()
     current = time.time()
     print('Elapsed: {}'.format(current-start))
-

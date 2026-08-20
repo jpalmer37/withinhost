@@ -5,7 +5,7 @@ import os
 
 
 
-folder = glob("/path/to/PycharmProjects/hiv-withinhost/0SequenceSets/*.fasta")
+folder = glob("/path/to/hiv-withinhost/0SequenceSets/*.fasta")
 
 subtypes = {}
 location = {}
@@ -20,7 +20,7 @@ for infile in folder:
 
     filter = {}
     byStudy = set()
-    #output = open("/path/to/PycharmProjects/hiv-withinhost/1FilteredSeqs/" + filename, "w")
+    #output = open("/path/to/hiv-withinhost/1FilteredSeqs/" + filename, "w")
     data = parse_fasta(fasta)
     
     # filter : screen for sequences missing subtype, collection year, and those without sampling collection info

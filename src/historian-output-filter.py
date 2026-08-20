@@ -21,7 +21,7 @@ runFolders = glob(inFolder+"*")
 
 for folder in runFolders:
 
-    finished = "/path/to/PycharmProjects/hiv-withinhost/8_1_Hfinished/"
+    finished = "/path/to/hiv-withinhost/8_1_Hfinished/"
 
     #if not os.path.isdir(unfinished):
         #os.mkdir(unfinished)

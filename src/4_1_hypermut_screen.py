@@ -8,9 +8,9 @@ from seqUtils import *
 import pandas as pd
 import re
 
-msa_path = "/path/to/PycharmProjects/hiv-withinhost/4MSA/prelim/"
+msa_path = "/path/to/hiv-withinhost/4MSA/prelim/"
 msafolder = glob(msa_path+"*.fasta")
-full_path = "/path/to/PycharmProjects/hiv-withinhost/3RegionSequences/full_length/"
+full_path = "/path/to/hiv-withinhost/3RegionSequences/full_length/"
 
 print(msafolder)
 with open(msa_path+"111848/blacklist-848.txt","rU") as handle:
@@ -49,9 +49,9 @@ for msafile in msafolder:
     cnsus = consensus(fasta1).upper()
     
     # creates a temp MSA file with the consensus sequence at the top
-    tpath = "/path/to/vindels/2_within-host/hm-temp.fasta"
+    tpath = "/path/to/hiv-withinhost/hm-temp.fasta"
     #if filename in ["111848-1.fasta", "111848-2.fasta"]:
-        #tpath = "/path/to/vindels/2_within-host/"+filename
+        #tpath = "/path/to/hiv-withinhost/"+filename
     tfile = open(tpath,"w+")
     tfile.write(">REF\n"+cnsus+"\n")
     for header in msa:

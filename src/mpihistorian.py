@@ -48,7 +48,7 @@ for i in range(len(files)):
              
         outfile = open(out_path+out_name, 'w+')
         #p = Popen(" ".join(['historian', '-guide', msa_path+msa_name, '-tree', tree_path+files[i],'-ancseq','-output','fasta','>',out_path+out_name]),shell=True)
-        status = check_call(['/path/to/Documents/historian/historian', '-v', '-guide', msa_path+msa_name, '-tree', tree_path+files[i],'-ancseq','-output','fasta'], stdout=outfile)
+        status = check_call(['/path/to/historian', '-v', '-guide', msa_path+msa_name, '-tree', tree_path+files[i],'-ancseq','-output','fasta'], stdout=outfile)
         outfile.close()
 
         # completion terminal message

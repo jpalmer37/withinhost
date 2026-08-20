@@ -1,5 +1,5 @@
-msadir="/path/to/PycharmProjects/hiv-withinhost/4MSA/hm-screen/"
-treedir="/path/to/PycharmProjects/hiv-withinhost/4_5_Raxml/100BS/"
+msadir="/path/to/hiv-withinhost/4MSA/hm-screen/"
+treedir="/path/to/hiv-withinhost/4_5_Raxml/100BS/"
 echo "${treedir}rooted_trees/"
 
 for fullname in ${treedir}rooted_trees/*.tree; do

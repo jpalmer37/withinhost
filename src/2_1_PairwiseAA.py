@@ -24,9 +24,9 @@ def get_boundaries(str):
 
 
 
-gp120 = open("/path/to/PycharmProjects/hiv-withinhost/gp120.txt",'r')
+gp120 = open("/path/to/hiv-withinhost/gp120.txt",'r')
 gp120 = ""
-with open("/path/to/PycharmProjects/hiv-withinhost/gp120.txt",'r') as handle:
+with open("/path/to/hiv-withinhost/gp120.txt",'r') as handle:
     for line in handle:
         line = line.strip("\n")
         gp120 += line
@@ -36,7 +36,7 @@ vlad_aaref = translate_nuc(vlad_ntref, 0)
 
 print(vlad_aaref)
 
-folder = glob("/path/to/PycharmProjects/hiv-withinhost/1FilteredSeqs/*.fasta")
+folder = glob("/path/to/hiv-withinhost/1FilteredSeqs/*.fasta")
 
 pairwise = {}
 total = 0 
@@ -53,7 +53,7 @@ for infile in folder:
         data = parse_fasta(handle)
     unequal = []
 
-    #output = open("/path/to/PycharmProjects/hiv-withinhost/2PairwiseAA/"+filename, "w")
+    #output = open("/path/to/hiv-withinhost/2PairwiseAA/"+filename, "w")
     
     # appropriately handle the VN data set 
 

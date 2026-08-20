@@ -17,7 +17,7 @@ if len(sys.argv) != 2:
     print("USAGE: python 5_1_xml_edit.py [unique run id]")    #  [input folder] [output folder]")  # removed since folder never changes 
     sys.exit()
 
-work = "/path/to/PycharmProjects/hiv-withinhost/"
+work = "/path/to/hiv-withinhost/"
 
 run_id = sys.argv[1]
 

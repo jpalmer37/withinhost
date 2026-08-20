@@ -269,7 +269,7 @@ def main():
         os.mkdir(outpath+"del/")
     
     # path to the variable region sequences 
-    vPath = '/path/to/PycharmProjects/hiv-withinhost/3RegionSequences/variable/'
+    vPath = '/path/to/hiv-withinhost/3RegionSequences/variable/'
 
     #totalseqs = 0
     for infile in hFolder:

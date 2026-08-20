@@ -1,5 +1,5 @@
 #!/bin/bash
-path="/path/to/PycharmProjects/hiv-withinhost/"
+path="/path/to/hiv-withinhost/"
 msadir="${path}4MSA/hm-screen/"
 outdir="${path}8Historian/mcc/local/"
 indir="${path}7_5_MCC/final/"

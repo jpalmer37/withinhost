@@ -4,7 +4,7 @@ import glob
 from seqUtils2 import *
 import csv 
 
-infile = open("/path/to/PycharmProjects/hiv-withinhost/13_nglycs/ins-edit.csv", "rU")
+infile = open("/path/to/hiv-withinhost/13_nglycs/ins-edit.csv", "rU")
 icsv = csv.DictReader(infile,  delimiter="\t")
 
 #print(data)
@@ -167,7 +167,7 @@ infile.close()
 print(interfered)
 print(len(interfered))
 # OUTPUT 
-ioutput = open("/path/to/PycharmProjects/hiv-withinhost/13_nglycs/interfered/insertions.csv", "w")
+ioutput = open("/path/to/hiv-withinhost/13_nglycs/interfered/insertions.csv", "w")
 ioutput.write("header\tpos\n")
 for header in interfered:
     outlist = []
@@ -180,7 +180,7 @@ ioutput.close()
 
 print(aaTotal)
 print(ngTotal)
-outprops = open("/path/to/PycharmProjects/hiv-withinhost/13_nglycs/interfered/ngprops.csv", "w")
+outprops = open("/path/to/hiv-withinhost/13_nglycs/interfered/ngprops.csv", "w")
 
 props = [float(ngTotal[1]) / aaTotal[1],
         float(ngTotal[2]) / aaTotal[2],
@@ -195,7 +195,7 @@ outprops.write("insertions,{},{},0.0,{},{}\n" .format(props[0],props[1],props[2]
 
 interfered = {}
 
-infile = open("/path/to/PycharmProjects/hiv-withinhost/13_nglycs/del-edit.csv", "rU")
+infile = open("/path/to/hiv-withinhost/13_nglycs/del-edit.csv", "rU")
 dcsv = csv.DictReader(infile,  delimiter="\t")
 
 interfered = {}
@@ -328,7 +328,7 @@ print(interfered)
 print(len(interfered))      
 
 # OUTPUT 
-doutput = open("/path/to/PycharmProjects/hiv-withinhost/13_nglycs/interfered/deletions.csv", "w")
+doutput = open("/path/to/hiv-withinhost/13_nglycs/interfered/deletions.csv", "w")
 doutput.write("header\tpos\n")
 for header in interfered:
     outlist = []

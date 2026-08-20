@@ -4,7 +4,7 @@ import subprocess
 import random
 
 
-path = "/path/to/PycharmProjects/hiv-withinhost/4MSA/hm-screen/111848/"
+path = "/path/to/hiv-withinhost/4MSA/hm-screen/111848/"
 
 with open(path+"111848-1.fasta","rU") as handle:
     msa1 = convert_fasta(handle)
